@@ -47,7 +47,7 @@ class Cliente {
     }
 
     public function __tostring(){
-        $estado = $this->getEstado()? "BAJA" : "ACTIVO";
+        $estado = $this->getEstado()? "ACTIVO" : "BAJA";
         return "Cliente:". $this->getNombre()." ".$this->getApellido()." - Documento: ". $this->getTipoDoc()." ".$this->getDoc()." - Estado: $estado";   
     }
 }
